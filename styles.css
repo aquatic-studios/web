@@ -91,8 +91,16 @@ h1 .dots {
   opacity: .7;
 }
 
+.tagline {
+  margin: 18px auto 0;
+  max-width: 430px;
+  font-size: clamp(.95rem, 2.4vw, 1.05rem);
+  line-height: 1.6;
+  color: rgba(238, 246, 255, .72);
+}
+
 .actions {
-  margin-top: 40px;
+  margin-top: 36px;
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
@@ -158,6 +166,23 @@ footer {
   font-size: .82rem;
   letter-spacing: .06em;
   color: rgba(238, 246, 255, .55);
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(238, 246, 255, .28);
+  transition: color .2s ease, border-color .2s ease;
+}
+
+footer a:hover {
+  color: var(--pastel);
+  border-bottom-color: var(--pastel);
+}
+
+footer .sep {
+  margin: 0 6px;
+  opacity: .5;
 }
 
 @media (max-width: 520px) {
